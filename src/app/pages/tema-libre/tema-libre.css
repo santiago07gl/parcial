@@ -1,0 +1,261 @@
+:host {
+  display: block;
+}
+
+.space-page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 28px 0 48px;
+  color: #f7f8ff;
+}
+
+.space-hero {
+  position: relative;
+  display: flex;
+  min-height: 300px;
+  align-items: center;
+  overflow: hidden;
+  padding: 34px;
+  border-radius: 13px;
+  background:
+    radial-gradient(circle at 78% 45%, rgb(77 93 168 / 44%), transparent 30%),
+    linear-gradient(120deg, #151d3a, #29365d 70%, #344576);
+}
+
+.space-hero__copy {
+  position: relative;
+  z-index: 1;
+  max-width: 490px;
+}
+
+.eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin: 0;
+  color: #c1c9e5;
+  font-size: 8px;
+  font-weight: 750;
+  letter-spacing: 0.16em;
+}
+
+.eyebrow span {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #9dabff;
+  box-shadow: 0 0 0 4px rgb(157 171 255 / 15%);
+}
+
+.space-hero h1 {
+  margin: 19px 0 11px;
+  font-size: clamp(41px, 5.4vw, 59px);
+  font-weight: 700;
+  letter-spacing: -0.075em;
+  line-height: 1;
+}
+
+.space-hero h1 span {
+  color: #aeb9ef;
+  font-weight: 450;
+}
+
+.space-hero__copy > p:last-child {
+  max-width: 420px;
+  margin: 0;
+  color: #c2c9dc;
+  font-size: 10px;
+  line-height: 1.8;
+}
+
+.space-art {
+  position: absolute;
+  top: 50%;
+  right: 3%;
+  width: 280px;
+  height: 280px;
+  transform: translateY(-50%);
+}
+
+.space-art__planet {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 145px;
+  height: 145px;
+  border: 1px solid rgb(220 228 255 / 60%);
+  border-radius: 50%;
+  background:
+    radial-gradient(circle at 33% 28%, #abb8f5, #6676c7 47%, #384879 79%);
+  box-shadow: 0 0 50px rgb(131 148 255 / 24%);
+  transform: translate(-50%, -50%);
+}
+
+.space-art__planet::after {
+  position: absolute;
+  inset: 22% 8%;
+  border: 1px solid rgb(235 239 255 / 24%);
+  border-radius: 50%;
+  content: "";
+  transform: rotate(-24deg);
+}
+
+.space-art__orbit {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 250px;
+  height: 91px;
+  border: 1px solid rgb(198 207 255 / 56%);
+  border-radius: 50%;
+  transform: translate(-50%, -50%) rotate(-23deg);
+}
+
+.space-art__moon {
+  position: absolute;
+  top: 49px;
+  right: 38px;
+  width: 19px;
+  height: 19px;
+  border-radius: 50%;
+  background: #f4d6a3;
+  box-shadow: 0 0 17px rgb(244 214 163 / 50%);
+}
+
+.space-art__star {
+  position: absolute;
+  color: #e6eaff;
+}
+
+.space-art__star--one {
+  top: 35px;
+  left: 40px;
+}
+
+.space-art__star--two {
+  right: 29px;
+  bottom: 44px;
+  font-size: 19px;
+}
+
+.space-art__star--three {
+  bottom: 48px;
+  left: 38px;
+  font-size: 27px;
+}
+
+.space-facts {
+  padding: 33px 0 22px;
+}
+
+.section-heading {
+  margin-bottom: 16px;
+}
+
+.eyebrow--accent {
+  margin-bottom: 8px;
+  color: #7182e6;
+}
+
+.section-heading h2 {
+  margin: 0;
+  color: #1b2540;
+  font-size: 21px;
+  letter-spacing: -0.05em;
+}
+
+.fact-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.fact-card {
+  min-height: 162px;
+  padding: 17px;
+  border: 1px solid #e7eaf1;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.fact-card__index {
+  color: #737fbb;
+  font-size: 7px;
+  font-weight: 750;
+  letter-spacing: 0.12em;
+}
+
+.fact-card h3 {
+  margin: 14px 0 7px;
+  color: #26314c;
+  font-size: 12px;
+  letter-spacing: -0.025em;
+}
+
+.fact-card p {
+  margin: 0;
+  color: #798398;
+  font-size: 9px;
+  line-height: 1.75;
+}
+
+.space-quote {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding: 15px 17px;
+  border: 1px solid #e4e8f5;
+  border-radius: 8px;
+  background: #f0f2fb;
+  color: #59699d;
+}
+
+.space-quote > span {
+  color: #7b8be0;
+  font-size: 18px;
+}
+
+.space-quote p {
+  margin: 0;
+  font-size: 10px;
+  font-weight: 650;
+}
+
+@media (max-width: 760px) {
+  .space-art {
+    right: -70px;
+    opacity: 0.65;
+  }
+
+  .fact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .fact-card {
+    min-height: auto;
+  }
+}
+
+@media (max-width: 520px) {
+  .space-page {
+    padding-top: 19px;
+  }
+
+  .space-hero {
+    min-height: 290px;
+    padding: 24px 20px;
+  }
+
+  .space-hero h1 {
+    font-size: 42px;
+  }
+
+  .space-art {
+    right: -160px;
+    opacity: 0.35;
+  }
+
+  .space-facts {
+    padding-top: 26px;
+  }
+}

@@ -4,6 +4,7 @@ import { Inicio } from './pages/inicio/inicio';
 import { Portal } from './pages/portal/portal';
 import { Estudiante1 } from './components/estudiante-1/estudiante-1';
 import { Estudiante2 } from './components/estudiante-2/estudiante-2';
+import { TemaLibre } from './pages/tema-libre/tema-libre';
 
 export const routes: Routes = [
   {
@@ -13,7 +14,7 @@ export const routes: Routes = [
       { path: '', pathMatch: 'full', redirectTo: 'inicio' },
       { path: 'inicio', component: Inicio },
       { path: 'aprendizajes', component: Aprendizajes },
-
+      {path: 'tema-libre', component: TemaLibre},
       { path: 'hoja-de-vida/estudiante-1', component: Estudiante1 },
       { path: 'hoja-de-vida/estudiante-2', component: Estudiante2 },
       { path: 'HojaVida', pathMatch: 'full', redirectTo: 'hoja-de-vida/estudiante-1' },
