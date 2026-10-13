@@ -1,0 +1,57 @@
+:host {
+  display: block;
+}
+
+.section-title {
+  margin: 0 0 13px;
+  color: #202b43;
+  font-size: 12px;
+  font-weight: 720;
+  letter-spacing: -0.025em;
+}
+
+.contact-list {
+  display: grid;
+  gap: 11px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.contact-list__item {
+  display: flex;
+  min-width: 0;
+  align-items: center;
+  gap: 9px;
+}
+
+.contact-list__icon {
+  display: grid;
+  width: 27px;
+  height: 27px;
+  flex: 0 0 auto;
+  place-items: center;
+  border-radius: 8px;
+  background: #f1f3f9;
+  color: #60709e;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.contact-list__details {
+  display: grid;
+  min-width: 0;
+  gap: 3px;
+}
+
+.contact-list__label {
+  color: #8992a4;
+  font-size: 8px;
+}
+
+.contact-list__value {
+  color: #46516a;
+  font-size: 9px;
+  font-weight: 600;
+  overflow-wrap: anywhere;
+}

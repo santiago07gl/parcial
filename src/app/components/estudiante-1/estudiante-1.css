@@ -1,0 +1,138 @@
+:host {
+  display: block;
+  min-width: 0;
+}
+
+.student-page {
+  width: min(100% - 40px, 790px);
+  margin: 0 auto;
+  padding-bottom: 48px;
+}
+
+.student-nav {
+  display: flex;
+  min-height: 68px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 26px;
+  border-bottom: 1px solid #e7eaf1;
+}
+
+.student-nav__brand {
+  color: #1b2540;
+  font-size: 13px;
+  font-weight: 750;
+  text-decoration: none;
+}
+
+.student-nav__links {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.student-nav__links a {
+  padding: 8px 10px;
+  border-radius: 6px;
+  color: #737e94;
+  font-size: 10px;
+  font-weight: 650;
+  text-decoration: none;
+}
+
+.student-nav__links a[aria-current="page"] {
+  background: #edf0ff;
+  color: #4f63cb;
+}
+
+.resume-card {
+  overflow: hidden;
+  border: 1px solid #e7eaf1;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 10px 30px rgb(28 42 74 / 5%);
+}
+
+.resume-card__banner {
+  background:
+    radial-gradient(circle at 90% 0, rgb(255 255 255 / 15%), transparent 38%),
+    linear-gradient(125deg, #303d70, #536bc8);
+}
+
+.resume-card__content {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(145px, 0.8fr);
+  gap: 18px;
+  padding: 21px;
+}
+
+.resume-card__main,
+.resume-card__sidebar {
+  display: grid;
+  align-content: start;
+  gap: 21px;
+  min-width: 0;
+}
+
+.resume-card__sidebar {
+  padding-left: 17px;
+  border-left: 1px solid #edf0f5;
+}
+
+.resume-card__footer {
+  display: flex;
+  min-height: 39px;
+  align-items: center;
+  gap: 7px;
+  padding: 0 21px;
+  border-top: 1px solid #edf0f5;
+  background: #fcfcfe;
+  color: #838da1;
+  font-size: 8px;
+}
+
+.resume-card__status {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #7489f3;
+}
+
+@media (max-width: 480px) {
+  .student-page {
+    width: calc(100% - 28px);
+    padding-bottom: 28px;
+  }
+
+  .student-nav {
+    min-height: 60px;
+    margin-bottom: 18px;
+  }
+
+  .student-nav__links {
+    gap: 1px;
+  }
+
+  .student-nav__links a {
+    padding: 7px 6px;
+    font-size: 9px;
+  }
+
+  .resume-card__content {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 18px 16px;
+  }
+
+  .resume-card__sidebar {
+    gap: 19px;
+    padding: 18px 0 0;
+    border-top: 1px solid #edf0f5;
+    border-left: 0;
+  }
+
+  .resume-card__footer {
+    padding-inline: 16px;
+  }
+}

@@ -1,0 +1,79 @@
+:host {
+  display: block;
+}
+
+.section-title {
+  margin: 0 0 13px;
+  color: #202b43;
+  font-size: 12px;
+  font-weight: 720;
+  letter-spacing: -0.025em;
+}
+
+.education-list {
+  display: grid;
+  gap: 13px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.education-item {
+  position: relative;
+  display: flex;
+  gap: 11px;
+}
+
+.education-item:not(:last-child)::before {
+  position: absolute;
+  top: 12px;
+  bottom: -15px;
+  left: 5px;
+  width: 1px;
+  background: #e3e7f0;
+  content: "";
+}
+
+.education-item__marker {
+  z-index: 1;
+  width: 9px;
+  height: 9px;
+  flex: 0 0 auto;
+  margin-top: 2px;
+  border: 2px solid #dce2ff;
+  border-radius: 50%;
+  background: #687ef0;
+  box-sizing: content-box;
+}
+
+.education-item__content {
+  min-width: 0;
+}
+
+.education-item__period {
+  margin: 0 0 5px;
+  color: #6c7bd0;
+  font-size: 8px;
+  font-weight: 700;
+}
+
+.education-item h4 {
+  margin: 0;
+  color: #35415a;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.education-item__institution {
+  margin: 3px 0 0;
+  color: #727d92;
+  font-size: 9px;
+}
+
+.education-item__details {
+  margin: 5px 0 0;
+  color: #8b93a4;
+  font-size: 8px;
+  line-height: 1.6;
+}

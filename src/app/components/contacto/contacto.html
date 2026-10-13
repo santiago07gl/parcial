@@ -1,0 +1,14 @@
+<section class="contact" aria-label="Información de contacto">
+  <h3 class="section-title">Contacto</h3>
+  <ul class="contact-list">
+    @for (item of items; track item.label) {
+      <li class="contact-list__item">
+        <span class="contact-list__icon" aria-hidden="true">{{ item.icon }}</span>
+        <span class="contact-list__details">
+          <span class="contact-list__label">{{ item.label }}</span>
+          <span class="contact-list__value">{{ item.value }}</span>
+        </span>
+      </li>
+    }
+  </ul>
+</section>

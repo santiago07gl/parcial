@@ -1,0 +1,22 @@
+<section class="experience" aria-label="Experiencia laboral y proyectos">
+  <h3 class="section-title">Experiencia y proyectos</h3>
+  <div class="experience-list">
+    @for (item of items; track item.title) {
+      <article class="experience-card">
+        <div class="experience-card__heading">
+          <div>
+            <h4>{{ item.title }}</h4>
+            <p class="experience-card__organization">{{ item.organization }}</p>
+          </div>
+          <span class="experience-card__period">{{ item.period }}</span>
+        </div>
+        <p class="experience-card__description">{{ item.description }}</p>
+        <ul class="experience-card__tags">
+          @for (tag of item.tags; track tag) {
+            <li>{{ tag }}</li>
+          }
+        </ul>
+      </article>
+    }
+  </div>
+</section>

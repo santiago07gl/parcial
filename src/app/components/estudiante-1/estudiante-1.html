@@ -1,0 +1,31 @@
+<main class="student-page">
+  <nav class="student-nav" aria-label="Hojas de vida del equipo">
+    <a class="student-nav__brand" routerLink="/hoja-de-vida/estudiante-1">Portafolio del equipo</a>
+    <div class="student-nav__links">
+      <a routerLink="/hoja-de-vida/estudiante-1" aria-current="page">Estudiante 01</a>
+      <a routerLink="/hoja-de-vida/estudiante-2">Estudiante 02</a>
+    </div>
+  </nav>
+
+  <article class="resume-card">
+    <div class="resume-card__banner resume-card__banner--blue">
+      <app-perfil [data]="profile" />
+    </div>
+
+    <div class="resume-card__content">
+      <div class="resume-card__main">
+        <app-experiencia [items]="experiences" />
+        <app-formacion [items]="education" />
+      </div>
+      <aside class="resume-card__sidebar" aria-label="Información adicional">
+        <app-contacto [items]="contacts" />
+        <app-habilidades [items]="skills" />
+      </aside>
+    </div>
+
+    <footer class="resume-card__footer">
+      <span class="resume-card__status" aria-hidden="true"></span>
+      <span>Aprendiendo y construyendo, paso a paso.</span>
+    </footer>
+  </article>
+</main>

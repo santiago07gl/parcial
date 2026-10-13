@@ -1,0 +1,82 @@
+:host {
+  display: block;
+}
+
+.section-title {
+  margin: 0 0 13px;
+  color: #202b43;
+  font-size: 12px;
+  font-weight: 720;
+  letter-spacing: -0.025em;
+}
+
+.experience-list {
+  display: grid;
+  gap: 10px;
+}
+
+.experience-card {
+  padding: 12px;
+  border: 1px solid #ebedf3;
+  border-radius: 7px;
+  background: #fcfcfe;
+}
+
+.experience-card__heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 9px;
+}
+
+.experience-card h4 {
+  margin: 0;
+  color: #35415a;
+  font-size: 10px;
+  font-weight: 720;
+  line-height: 1.45;
+}
+
+.experience-card__organization {
+  margin: 3px 0 0;
+  color: #788297;
+  font-size: 8px;
+}
+
+.experience-card__period {
+  flex: 0 0 auto;
+  padding: 4px 6px;
+  border-radius: 4px;
+  background: #f0f2fc;
+  color: #6775b5;
+  font-size: 7px;
+  font-weight: 700;
+}
+
+.experience-card__description {
+  margin: 9px 0 0;
+  color: #788196;
+  font-size: 8px;
+  line-height: 1.65;
+}
+
+.experience-card__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin: 8px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.experience-card__tags li {
+  color: #6879cd;
+  font-size: 7px;
+  font-weight: 650;
+}
+
+.experience-card__tags li:not(:last-child)::after {
+  padding-left: 5px;
+  color: #b7bfd2;
+  content: "•";
+}

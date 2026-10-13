@@ -1,0 +1,16 @@
+<section class="education" aria-label="Formación académica">
+  <h3 class="section-title">Formación académica</h3>
+  <ol class="education-list">
+    @for (item of items; track item.program) {
+      <li class="education-item">
+        <span class="education-item__marker" aria-hidden="true"></span>
+        <div class="education-item__content">
+          <p class="education-item__period">{{ item.period }}</p>
+          <h4>{{ item.program }}</h4>
+          <p class="education-item__institution">{{ item.institution }}</p>
+          <p class="education-item__details">{{ item.details }}</p>
+        </div>
+      </li>
+    }
+  </ol>
+</section>
