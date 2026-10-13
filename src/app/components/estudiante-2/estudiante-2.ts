@@ -15,7 +15,7 @@ import { Perfil, PerfilData } from '../perfil/perfil';
 export class Estudiante2 {
   readonly profile: PerfilData = {
     initials: 'NR',
-    name: 'Nicolas Restrepo',
+    name: 'Nicolas Restrepo Sanchez',
     role: 'Estudiante · Ingeniería de Sistemas',
     summary:
       'Perfil en desarrollo con curiosidad por la innovación y el diseño de experiencias digitales. Me gusta aprender nuevas herramientas y trabajar en equipo.',

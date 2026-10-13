@@ -1,0 +1,43 @@
+<div class="portal">
+  <header class="portal-header">
+    <a class="portal-brand" routerLink="/inicio" aria-label="Ir al inicio">
+      <span class="portal-brand__mark">EP</span>
+      <span>Explora<span class="portal-brand__light">Portafolio</span></span>
+    </a>
+
+    <nav class="portal-nav" aria-label="Navegación principal">
+      <a routerLink="/inicio" routerLinkActive="portal-nav__link--active" ariaCurrentWhenActive="page">
+        Inicio
+      </a>
+      <a routerLink="/aprendizajes" routerLinkActive="portal-nav__link--active" ariaCurrentWhenActive="page">
+        Aprendizajes
+      </a>
+      <a routerLink="/tema-libre" routerLinkActive="portal-nav__link--active" ariaCurrentWhenActive="page">
+        Tema libre
+      </a>
+      <a
+        routerLink="/hoja-de-vida/estudiante-1"
+        routerLinkActive="portal-nav__link--active"
+        ariaCurrentWhenActive="page"
+      >
+        Estudiante 01
+      </a>
+      <a
+        routerLink="/hoja-de-vida/estudiante-2"
+        routerLinkActive="portal-nav__link--active"
+        ariaCurrentWhenActive="page"
+      >
+        Estudiante 02
+      </a>
+    </nav>
+  </header>
+
+  <main class="portal-main">
+    <router-outlet />
+  </main>
+
+  <footer class="portal-footer">
+    <span>PORTAFOLIO ACADÉMICO</span>
+    <span>Aprender · Crear · Compartir</span>
+  </footer>
+</div>
