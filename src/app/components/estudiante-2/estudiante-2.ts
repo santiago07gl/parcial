@@ -14,27 +14,27 @@ import { Perfil, PerfilData } from '../perfil/perfil';
 })
 export class Estudiante2 {
   readonly profile: PerfilData = {
-    initials: '02',
-    name: 'Nombre del segundo integrante',
-    role: 'Estudiante · Nombre del programa',
+    initials: 'NR',
+    name: 'Nicolas Restrepo',
+    role: 'Estudiante · Ingeniería de Sistemas',
     summary:
       'Perfil en desarrollo con curiosidad por la innovación y el diseño de experiencias digitales. Me gusta aprender nuevas herramientas y trabajar en equipo.',
-    location: 'Ciudad, Colombia',
+    location: 'Tulua, Colombia',
     number: '02',
   };
 
   readonly contacts: ContactItem[] = [
-    { icon: '@', label: 'Correo', value: 'compañero@ejemplo.com' },
-    { icon: '↗', label: 'Teléfono', value: '+57 300 000 0000' },
+    { icon: '@', label: 'Correo', value: 'nicolas.restrepo01@uceva.edu.co' },
+    { icon: '↗', label: 'Teléfono', value: '+57 316 889 2959' },
     { icon: 'in', label: 'LinkedIn', value: 'linkedin.com/in/tu-perfil' },
   ];
 
   readonly education: EducationItem[] = [
     {
-      program: 'Nombre del programa académico',
-      institution: 'Universidad o institución educativa',
-      period: '2023 — Actualidad',
-      details: 'Añade cursos relevantes, reconocimientos o énfasis académicos.',
+      program: 'Ingeniería de Sistemas',
+      institution: 'UCEVA',
+      period: '2025 — Actualidad',
+      details: 'Curso de HTML, CSS y JavaScript, con énfasis en desarrollo web y aplicaciones.',
     },
   ];
 
@@ -58,7 +58,7 @@ export class Estudiante2 {
     {
       title: 'Proyecto personal o experiencia',
       organization: 'Experiencia por completar',
-      period: '2024 — 2025',
+      period: '2025 — 2026',
       description:
         'Incluye una práctica, iniciativa, voluntariado o experiencia que quieras destacar.',
       tags: ['Creatividad', 'Colaboración'],
